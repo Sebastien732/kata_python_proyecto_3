@@ -21,6 +21,21 @@ print(f"la nueva lista de numeros es:{resultado}")
 3. Escribe una función que tome una lista de palabras y una palabra objetivo como parámetros. La función debe
 devolver una lista con todas las palabras de la lista original que contengan la palabra objetivo.
 4. Genera una función que calcule la diferencia entre los valores de dos listas. Usa la función map()
+
+```
+lista_1 = [12,36,3,85,104,21,65]
+lista_2 = [12,25,48,2,45,48,21]
+
+def diferencia(lista_1, lista_2):
+    return list(map(lambda X,Y:
+                    X-Y,lista_1, lista_2))
+
+lista_3 = list(diferencia(lista_1,lista_2))
+
+print(f"la lista 1 es:{lista_1}")
+print(f"la lista 2 es:{lista_2}")
+print(f"la lista 3 representa la lista 1 menos los valores de la lista 2:{lista_3}  ")
+```
 5. Ecribe una función que tome una lista de números como parámetro y un valor opcional nota_aprobado, que por
 defecto es 5. La función debe calcular la media de los números en la lista y determinar si la media es mayor o igual
 que nota aprobado. Si es así, el estado será "aprobado", de lo contrario, será "suspenso". La función debe devolver
